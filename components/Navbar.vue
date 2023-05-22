@@ -27,18 +27,24 @@
             <a class="font-semibold text-[#eee]" href="#faq" @click="() => showMobileNav = false">FAQ</a>
         </div>
         <div class="gap-4 items-end flex flex-col mt-16">
-            <div class="flex items-center gap-2 text-[#eee]">
-                <p>@cheabuela</p>
-                <Icon name="ri:instagram-fill" color="#eee" size="36" class="cursor-pointer" />
-            </div>
-            <div class="flex items-center gap-2 text-[#eee]">
-                <p>+51 987 123 432</p>
-                <Icon name="ri:whatsapp-fill" color="#eee" size="32" class="cursor-pointer" />
-            </div>
-            <div class="flex items-center gap-2 text-[#eee]">
-                <p>Che Abuela</p>
-                <Icon name="ri:facebook-circle-fill" color="#eee" size="32" class="cursor-pointer" />
-            </div>
+            <a href="https://www.instagram.com/cheabuela/">
+                <div class="flex items-center gap-2 text-[#eee]">
+                    <p>@cheabuela</p>
+                    <Icon name="ri:instagram-fill" color="#eee" size="36" class="cursor-pointer" />
+                </div>
+            </a>
+            <a href="https://wa.me/51962714482?text=Hola!%20Quisiera%20hacer%20un%20pedido%20de%20Che%20Abuela!">
+                <div class="flex items-center gap-2 text-[#eee]">
+                    <p>+51 987 123 432</p>
+                    <Icon name="ri:whatsapp-fill" color="#eee" size="32" class="cursor-pointer" />
+                </div>
+            </a>
+            <a href="https://m.facebook.com/people/Che-Abuela/100057447879403/">
+                <div class="flex items-center gap-2 text-[#eee]">
+                    <p>Che Abuela</p>
+                    <Icon name="ri:facebook-circle-fill" color="#eee" size="32" class="cursor-pointer" />
+                </div>
+            </a>
         </div>
     </div>
 </template>

@@ -18,9 +18,9 @@
                 productos!
             </p>
             <div class="flex flex-col gap-4 justify-center items-center mt-8 md:mt-0">
-                <a :href="button.href" v-for="button in orderButtons"
+                <a :href="button.href" target="_blank" v-for="button in orderButtons"
                     class="py-1 bg-[#eee] flex items-center w-64 justify-center gap-2 rounded-lg hover:scale-105 cursor-pointer">
-                    <Icon :name="button.icon" color="#242424" :size="button.iconSize" class="cursor-pointer" />
+                    <Icon :name="button.icon" color="#242424" :size="button.iconSize.toString()" class="cursor-pointer" />
                     <p>Pide por {{ button.name }}!</p>
                 </a>
             </div>
@@ -34,19 +34,19 @@ const orderButtons = [
         name: 'Instagram',
         icon: 'ri:instagram-fill',
         iconSize: 32,
-        href: ''
+        href: 'https://www.instagram.com/cheabuela'
     },
     {
         name: 'WhatsApp',
         icon: 'ri:whatsapp-fill',
         iconSize: 30,
-        href: ''
+        href: 'https://wa.me/51962714482?text=Hola!%20Quisiera%20hacer%20un%20pedido%20de%20Che%20Abuela!'
     },
     {
         name: 'Facebook',
         icon: 'ri:facebook-circle-fill',
         iconSize: 30,
-        href: ''
+        href: 'https://m.facebook.com/people/Che-Abuela/100057447879403/'
     },
 ]
 </script>

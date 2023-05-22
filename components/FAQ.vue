@@ -1,5 +1,5 @@
 <template>
-    <div id="faq" class="flex flex-col px-6 py-16 lg:px-24 xl:px-48 bg-[#D6E7F5]">
+    <div id="faq" class="flex flex-col px-6 py-16 lg:px-24 xl:px-48 bg-[#eee]">
         <h2 class="text-[#242424] font-bold text-4xl mb-4 md:mb-6">Preguntas Frecuentes</h2>
         <div class="flex flex-col">
             <div v-for="q in faq" class="flex flex-col cursor-pointer" @click="() => q.showAnswer = !q.showAnswer">
@@ -10,7 +10,8 @@
                     </div>
                     <div class="flex flex-col items-start">
                         <p class="font-semibold w-full">{{ q.question }}</p>
-                        <p v-if="q.showAnswer" class="text-sm mt-4">{{ q.answer }}</p>
+                        <p :class="q.showAnswer ? 'flex' : 'hidden'" class="text-sm mt-4">{{
+                            q.answer }}</p>
                     </div>
                 </div>
                 <div class="my-2 border-b-[1px] border-[#aaa]"></div>

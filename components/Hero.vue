@@ -10,16 +10,23 @@
                 Dulce
                 de Leche, Lúcuma,
                 Vainilla y Fudge.</p>
-            <a
+            <a href="#orders"
                 class=" cursor-pointer border-2 border-[#eee] mt-8 text-[#eee] bg-[#242424] w-fit px-6 py-1 text-xl rounded-sm hover:bg-[#eee] hover:text-[#242424] hover:border-[#242424] transition-all duration-300">Pide
                 Ahora!</a>
 
         </div>
         <img class="md:w-1/2" src="/images/layout/MainImage.png" alt="Foto de Alfajor">
         <div class="hidden md:flex gap-4 items-center absolute bottom-10">
-            <Icon name="ri:instagram-fill" color="#242424" size="36" class="cursor-pointer" />
-            <Icon name="ri:whatsapp-fill" color="#242424" size="32" class="cursor-pointer" />
-            <Icon name="ri:facebook-circle-fill" color="#242424" size="32" class="cursor-pointer" />
+            <a href="https://www.instagram.com/cheabuela/" target="_blank">
+                <Icon name="ri:instagram-fill" color="#242424" size="36" class="cursor-pointer" />
+            </a>
+            <a href="https://wa.me/51962714482?text=Hola!%20Quisiera%20hacer%20un%20pedido%20de%20Che%20Abuela!"
+                target="_blank">
+                <Icon name="ri:whatsapp-fill" color="#242424" size="32" class="cursor-pointer" />
+            </a>
+            <a href="https://m.facebook.com/people/Che-Abuela/100057447879403/" target="_blank">
+                <Icon name="ri:facebook-circle-fill" color="#242424" size="32" class="cursor-pointer" />
+            </a>
         </div>
     </div>
 </template>
